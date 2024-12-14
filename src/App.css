@@ -1,0 +1,271 @@
+body{
+  background-color: rgb(228, 223, 223);
+}
+.App {
+  text-align: center;
+}
+.bike-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bike-item{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 35px;
+  margin: 10px;
+  background-color: white;
+}
+.bike-make{
+  font-size: 25px;
+}
+.bike-model{
+  font-size: 20px;
+}
+.bike-pic{
+  width: 250px;
+}
+.btnLogOut{
+  margin: 30px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 50px;
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+  background-color: rgb(194, 194, 194);
+}
+.btnlogIn{
+  width: 500px;
+  height: 150px;
+  border: none;
+  border-radius: 20px;
+  font-size: 40px;
+  margin-top: 50px;
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+  background-color: rgb(194, 194, 194);
+}
+.btnlogIn:hover {
+  background-color: rgb(134, 133, 133);
+  font-weight: bold;
+}
+.main-page-header{
+  font-size: 50px;
+}
+.main-page-body{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-page-text{
+  font-size: 30px;
+  margin: 20px;
+  text-align: justify;
+}
+.picBikeStock{
+  width: 400px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+
+
+.filter-form {
+  margin: 20px;
+}
+
+.filter-form form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filter-form div {
+  margin-bottom: 10px;
+}
+
+.filter-form label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filter-form input,
+.filter-form select {
+  padding: 5px;
+  margin-top: 5px;
+  width: 200px;
+}
+
+.filter-btn,
+.reset-btn {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.reset-btn {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+.filter-btn:hover,
+.reset-btn:hover {
+  opacity: 0.8;
+}
+
+/* Пример стилей для проданных мотоциклов */
+.bike-sold {
+  opacity: 0.5;
+  /* Тусклое изображение */
+  filter: grayscale(100%);
+  /* Черно-белое изображение */
+}
+
+.sold-price {
+  text-decoration: line-through;
+  /* Зачеркивание цены */
+  color: gray;
+  /* Цвет зачеркнутой цены */
+}
+
+.sold-label {
+  font-weight: bold;
+  color: green;
+  margin-left: 10px;
+}
+
+.bike-item {
+  transition: all 0.3s ease;
+  /* Добавляем плавное изменение */
+}
+
+.bike-item button {
+  width: 120px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 2px;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    background-color: rgb(194, 194, 194);
+}
+
+.bike-item button:hover {
+  background-color: #45a049;
+}
+
+.bike-item button:active {
+  background-color: #3e8e41;
+}
+
+.sold-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: red;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+
+.edit-price-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.edit-price-form input {
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.edit-price-form button {
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-price-form button:hover {
+  background-color: #45a049;
+}
+
+.edit-price-form button:active {
+  background-color: #3e8e41;
+}
+
+.edit-price-form button:last-child {
+  background-color: #f44336;
+}
+
+.edit-price-form button:last-child:hover {
+  background-color: #e53935;
+}
+.edit-buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media all and (max-width: 1024px){
+
+    .filter-form form {
+      flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width: 800px){
+  .main-page-header{
+    font-size: 30px;
+  }
+    .main-page-body {
+      flex-direction: column;
+    }
+        .picBikeStock {
+          width: 70%;
+          margin: 10px;
+          border-radius: 15px;
+        }
+}
+@media all and (max-width: 400px) {
+  .btnlogIn {
+      width: 60%;
+      height: auto;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+        .main-page-text {
+          font-size: 20px;
+          margin: 10px;
+          margin-left: 20px;
+          margin-right: 20px;
+
+        }
+                .filter-form form {
+                  flex-wrap: nowrap;
+                  flex-direction: column;
+                  align-items: end;
+                }
+}
+@media all and (max-width: 320px){
+  .filter-form input,
+    .filter-form select {
+      width: 150px;
+    }
+}
